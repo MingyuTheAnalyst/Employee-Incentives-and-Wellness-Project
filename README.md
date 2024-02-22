@@ -99,11 +99,23 @@ HR requested to data analysis team:
 		ON A.Reason_for_absence = R.Number
 	```
 
-### Perform Analysis
-
 ### Connect Database to Power BI
 
+- Connect to SQL server to Power BI included the SQL statement. The cleaned and transformed dataset is imported.
+	
+ ![Cap 2024-02-16 15-41-35-741](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/ebcfe3e2-25e0-4694-98b4-f31ab7f5a25c)
+	
+ ![Cap 2024-02-16 15-54-42-410](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/34633315-f519-4700-afb5-045c83244812)
+
+
 ### Build a Dashboard
+
+- 
+![Cap 2024-02-21 17-55-44-625](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f)
+
+
+
+
 
 ### Key Achievements
 
