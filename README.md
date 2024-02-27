@@ -2,14 +2,13 @@
 
 ## Table of Contents
 
- - [Project Overview](#project-overview)
- - [Data Sources](#data-sources)
- - [Tools](#tools)
- - [Requirement Scenario](#requirement-scenario)
- - [Build a Database](#build-a-database)
- - [Connect Database to Power BI](#connect-database-to-power-bi)
- - [Build a Dashboard](#build-a-dashboard)
- - [Key Achievements](#key-achievements)
+- [Project Overview](#project-overview)
+- [Scenario](#scenario)
+- [Data & Tools](#data--tools)
+- [SQL Queries & Analysis](#sql-queries--analysis)
+- [Power BI Dashboard](#power-bi-dashboard)
+- [Achievements & Impact](#achievements--impact)
+- [Key Achievements](#key-achievements)
 
 ### Project Overview
 
@@ -17,23 +16,19 @@ The Employee-Incentives-and-Wellness-Project aims to analyze employee health and
 
 <img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
 
-### Data Sources
-
-- Source: https://github.com/Gaelim/work_incentive_program
-
-### Tools
-
-- Excel - Data Cleaning
-- SQL(SQL Server) - Data Exploration, Data Cleaning, Database
-- Power BI - Data analysis and visualizaiton
-
-### Requirement Scenario
+### Scenario
 
 HR requested to data analysis team:
 - Provide a list of heathy individual & low absenteeism for our healthy bonus program 
 - Caculate a wage increase or annual compensation for non-smokers for (Insurance budget of $983,221 for all non-smokers)
 - Create a dashboard for HR to understand absenteeism at work based on approved wireframe.
 
+### Data & Tools
+
+- Data Source: https://github.com/Gaelim/work_incentive_program
+- Excel - Data Cleaning
+- SQL(SQL Server) - Data Exploration, Data Cleaning, Database
+- Power BI - Data analysis and visualizaiton
 
 ### Build a Database
  
@@ -41,7 +36,7 @@ HR requested to data analysis team:
 
 	![Cap 2024-02-16 11-23-19-318](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/c2616dd8-e8d7-4818-9d44-494c7c9c5e16)
 
-### Develope SQL Query
+### SQL Queries & Analysis
 
 - Create a Join Table
 	```SQL
@@ -108,16 +103,13 @@ HR requested to data analysis team:
 		ON A.Reason_for_absence = R.Number
 	```
 
-### Connect Database to Power BI
+### Power BI Dashboard
 
 - Connect to SQL server to Power BI included the SQL statement. The cleaned and transformed dataset is imported.
 
 	![Cap 2024-02-16 15-41-35-741](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/ebcfe3e2-25e0-4694-98b4-f31ab7f5a25c)
 	
  	![Cap 2024-02-16 15-54-42-410](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/34633315-f519-4700-afb5-045c83244812)
-
-
-### Build a Dashboard
 
 - Deliver key performance indicators (KPIs) for the average absenteeism hours and offer a smart narrative to summarize the dashboard. Utilizing seasonal filtering simplifies and clarifies the dashboard presentation.
 
