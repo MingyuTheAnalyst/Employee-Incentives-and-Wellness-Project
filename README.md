@@ -1,8 +1,7 @@
 # Employee-Incentives-and-Wellness-Project
 
-![Cap 2024-02-21 17-55-44-625](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f)
+<img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
 
-## Table of Contents
 
  - [Project Overview](#project-overview)
  - [Data Sources](#data-sources)
