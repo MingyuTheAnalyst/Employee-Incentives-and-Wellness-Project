@@ -11,13 +11,11 @@
  - [Build a Dashboard](#build-a-dashboard)
  - [Key Achievements](#key-achievements)
 
-<img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
-
 ### Project Overview
 
 The Employee-Incentives-and-Wellness-Project aims to analyze employee health and absenteeism data to identify patterns and behaviors contributing to workplace wellness. Utilizing SQL Server for data management, Power BI for visualization, and Excel for preliminary data cleaning, this project seeks to inform HR strategies for health incentives, calculate compensation adjustments for non-smokers, and provide actionable insights through a comprehensive dashboard, thereby enhancing overall employee well-being and productivity.
 
-
+<img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
 
 ### Data Sources
 
