@@ -7,14 +7,15 @@
  - [Project Overview](#project-overview)
  - [Data Sources](#data-sources)
  - [Tools](#tools)
- - [Requirement Scenario](#requirement_scenario)
- - [Build a Database](#build_a_database)
- - [Connect Database to Power BI](#connect_database_to_power_bi)
- - [Build a Dashboard](#build_a_dashboard)
+ - [Requirement Scenario](#requirement-scenario)
+ - [Build a Database](#build-a-database)
+ - [Connect Database to Power BI](#connect-database-to-power-bi)
+ - [Build a Dashboard](#build-a-dashboard)
  - [Key Achievements](#key-achievements)
 
 ### Project Overview
 
+The Employee-Incentives-and-Wellness-Project aims to analyze employee health and absenteeism data to identify patterns and behaviors contributing to workplace wellness. Utilizing SQL Server for data management, Power BI for visualization, and Excel for preliminary data cleaning, this project seeks to inform HR strategies for health incentives, calculate compensation adjustments for non-smokers, and provide actionable insights through a comprehensive dashboard, thereby enhancing overall employee well-being and productivity.
 
 
 
@@ -31,7 +32,7 @@
 ### Requirement Scenario
 
 HR requested to data analysis team:
-- Provide a list of heathy individual & low absenteeism for our healthy bonus program - Total budget $1,000 USD
+- Provide a list of heathy individual & low absenteeism for our healthy bonus program 
 - Caculate a wage increase or annual compensation for non-smokers for (Insurance budget of $983,221 for all non-smokers)
 - Create a dashboard for HR to understand absenteeism at work based on approved wireframe.
 
@@ -62,12 +63,17 @@ HR requested to data analysis team:
 			AND Body_mass_index < 25
 			AND Absenteeism_time_in_hours < (SELECT AVG(Absenteeism_time_in_hours) FROM Absenteeism_at_work)
 	```
+	-  A list of heathy individual & low absenteeism for our healthy bonus program [Link](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/blob/main/list%20of%20healthiest%20employees%20for%20the%20bonus.csv)
+ 
 - Compensation Rate Increse for Non-Smokers / Budget 983,221 so 0.689 Increase per Hour / $1414.4 per Year
 	```SQL
 	SELECT COUNT(*) AS nonsmokers FROM Absenteeism_at_work
 	WHERE Social_smoker = 0
 	```
+	![image](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/f335f3d7-38b7-4696-80de-59162600745e)
 
+	- 40 hours * 52 Weeks * 686 = 1,426,880 and 983,221 / 1,426,880 = 0.68907055954
+ 
  - Optimize this Query
 	```SQL
 	SELECT
@@ -133,4 +139,10 @@ HR requested to data analysis team:
 
 
 ### Key Achievements
+- **Comprehensive Employee Health Analysis**: Developed an innovative methodology to identify the healthiest employees for a wellness bonus program, using criteria such as non-smoking status, low absenteeism, and healthy BMI. This targeted approach promotes a healthier workplace and incentivizes personal wellness.
 
+- **Strategic Financial Modeling for Non-Smoker Incentives**: Successfully created a financial model that effectively allocated a $983,221 insurance budget, resulting in a fair compensation increase for non-smokers. This initiative directly supports the company's health objectives and provides tangible benefits to employees.
+
+- **Dynamic Dashboard Development in Power BI**: Designed and deployed an interactive dashboard in Power BI that provides HR with real-time insights into absenteeism trends, employee wellness, and the effectiveness of wellness programs. This tool enhances decision-making capabilities and supports ongoing program evaluation.
+
+- **Positive Impact on Employee Well-being and Company Culture**: The project has made a significant contribution to fostering a healthier workforce and cultivating a company culture that values wellness. This is evidenced by reduced absenteeism rates and positive feedback from employees, demonstrating the tangible benefits of your wellness initiatives.
