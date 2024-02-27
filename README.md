@@ -1,7 +1,6 @@
 # Employee-Incentives-and-Wellness-Project
 
-<img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
-
+## Table of Contents
 
  - [Project Overview](#project-overview)
  - [Data Sources](#data-sources)
@@ -11,6 +10,8 @@
  - [Connect Database to Power BI](#connect-database-to-power-bi)
  - [Build a Dashboard](#build-a-dashboard)
  - [Key Achievements](#key-achievements)
+
+<img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
 
 ### Project Overview
 
