@@ -12,27 +12,27 @@
 
 ### Project Overview
 
-The Employee-Incentives-and-Wellness-Project aims to analyze employee health and absenteeism data to identify patterns and behaviors contributing to workplace wellness. Utilizing SQL Server for data management, Power BI for visualization, and Excel for preliminary data cleaning, this project seeks to inform HR strategies for health incentives, calculate compensation adjustments for non-smokers, and provide actionable insights through a comprehensive dashboard, thereby enhancing overall employee well-being and productivity.
+The Employee-Incentives-and-Wellness Project aims to analyze employee health and absenteeism data to identify patterns and behaviours contributing to workplace wellness. Utilizing SQL Server for data management, Power BI for visualization, and Excel for preliminary data cleaning, this project seeks to inform HR strategies for health incentives, calculate compensation adjustments for non-smokers, and provide actionable insights through a comprehensive dashboard, thereby enhancing overall employee well-being and productivity.
 
 <img src="https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/307c2924-25a9-453f-9b9b-c598ea954a1f" width="600">
 
 ### Scenario
 
 HR requested to data analysis team:
-- Provide a list of heathy individual & low absenteeism for our healthy bonus program 
-- Caculate a wage increase or annual compensation for non-smokers for (Insurance budget of $983,221 for all non-smokers)
-- Create a dashboard for HR to understand absenteeism at work based on approved wireframe.
+- Provide a list of healthy individuals & low absenteeism for our healthy bonus program 
+- Calculate a wage increase or annual compensation for non-smokers (Insurance budget of $983,221 for all non-smokers)
+- Create a dashboard for HR to understand absenteeism at work based on approved wireframes.
 
 ### Data & Tools
 
 - Data Source: https://github.com/Gaelim/work_incentive_program
 - Excel - Data Cleaning
 - SQL(SQL Server) - Data Exploration, Data Cleaning, Database
-- Power BI - Data analysis and visualizaiton
+- Power BI - Data analysis and visualization
 
 ### Build a Database
  
- - Using SQL server, created the database named "work" and imported the flat files(.csv) into "work" database.
+ - Using SQL server, created the database named "work" and imported the flat files(.csv) into the "work" database.
 
 	![Cap 2024-02-16 11-23-19-318](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/assets/88122148/c2616dd8-e8d7-4818-9d44-494c7c9c5e16)
 
@@ -56,9 +56,9 @@ HR requested to data analysis team:
 			AND Body_mass_index < 25
 			AND Absenteeism_time_in_hours < (SELECT AVG(Absenteeism_time_in_hours) FROM Absenteeism_at_work)
 	```
-	-  A list of heathy individual & low absenteeism for our healthy bonus program [Link](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/blob/main/list%20of%20healthiest%20employees%20for%20the%20bonus.csv)
+	-  A list of healthy individual & low absenteeism for our healthy bonus program [Link](https://github.com/MingyuTheAnalyst/Employee-Incentives-and-Wellness-Project/blob/main/list%20of%20healthiest%20employees%20for%20the%20bonus.csv)
  
-- Compensation Rate Increse for Non-Smokers / Budget 983,221 so 0.689 Increase per Hour / $1414.4 per Year
+- Compensation Rate Increase for Non-Smokers / Budget 983,221 so 0.689 Increase per Hour / $1414.4 per Year
 	```SQL
 	SELECT COUNT(*) AS nonsmokers FROM Absenteeism_at_work
 	WHERE Social_smoker = 0
